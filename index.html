@@ -1,43 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Mr.Calculator</title>
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Oxygen+Mono"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="brain/css/style.css" />
-		<link rel="icon" type="image/png" href="brain/img/fav.png" />
-	</head>
-	<body>
-		<div id="calculator">
-			<div id="result">0</div>
-			<button onclick="cls();">AC</button>
-			<button onclick="num(this.innerHTML);">7</button>
-			<button onclick="num(this.innerHTML);">8</button>
-			<button onclick="num(this.innerHTML);">9</button>
-			<button onclick="calc(this.innerHTML);">/</button>
-			<button onclick="num(this.innerHTML);">4</button>
-			<button onclick="num(this.innerHTML);">5</button>
-			<button onclick="num(this.innerHTML);">6</button>
-			<button onclick="calc(this.innerHTML);">*</button>
-			<button onclick="num(this.innerHTML);">1</button>
-			<button onclick="num(this.innerHTML);">2</button>
-			<button onclick="num(this.innerHTML);">3</button>
-			<button onclick="calc(this.innerHTML);">-</button>
-			<button onclick="num(this.innerHTML);">0</button>
-			<button onclick="num(this.innerHTML);">.</button>
-			<button onclick="total();">=</button>
-			<button onclick="calc(this.innerHTML);">+</button>
-			<div id="smallResult"></div>
-		</div>
-		<script src="brain/js/script.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG TEETech</title>
+    
+    <style>
+        /* General Page Styles */
+        body {
+            background-color: white; 
+            color: black; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: black;
+            padding: 10px;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        /* Image Styling */
+        img {
+            width: 300px;
+            height: auto; 
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Form Styling */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Young Tee Tech</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>REPORT FILES THAT ARE NOT WORKING ONLY  </h2>
+        <strong> </strong>
+        <p>If you have a problem just DM me </p>
+
+        <p>Wanna chat with me?</p>
+        <strong>Here are my links:</strong>
+        <ul>
+            <li>WhatsApp: <a href="https://wa.me/27722247464">Click here to chat</a></li>
+            <li>Group: <a href="https://chat.whatsapp.com/CvCsijfCVD67IPsREC2vLE">Start chatting</a></li>
+            <li>Channel: <a href="https://whatsapp.com/channel/0029Vb3X5B7CHDynvsspSI0g">Click here</a></li>
+        </ul>
+
+        <form>
+            <h2>Fill your details here</h2>
+            Name: <input type="text" placeholder="Type your name here..." required><br>
+            Email: <input type="email" placeholder="Type your email..." required><br>
+            Number: <input type="number" placeholder="27717xxxxxxxxxx" required><br>
+            <button>Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 YOUNG TEETech. All rights reserved.</p>
+    </footer>
+</body>
 </html>
+													       
