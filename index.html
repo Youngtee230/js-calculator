@@ -71,121 +71,192 @@
     th {
       background-color: #222;
       color: #ffcc00;
-      font-size: 1.1rem;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KING OF FREENET 🇫🇮 HOSTS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
     }
 
-    tr:nth-child(even) {
-      background-color: #2a2a2a;
+    nav {
+      background-color: #0d1b2a;
+      padding: 10px 20px;
+      text-align: center;
     }
 
-    tr:hover {
-      background-color: #333;
-      transition: 0.3s ease;
-    }
-
-    td:first-child {
-      color: #00ffe1;
+    nav a {
+      color: #00e6e6;
+      text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
+      font-size: 1.1em;
     }
 
-    td:nth-child(2) {
+    nav a:hover {
       color: #ffcc00;
     }
 
-    .buy-button {
-      background: #00ffe1;
-      color: #000;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s ease;
-      text-decoration: none;
-      font-weight: bold;
+    .section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
     }
 
-    .buy-button:hover {
-      background: #00c6b3;
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #00e6e6;
+    }
+
+    h2 {
+      color: #ffcc00;
+      margin-top: 30px;
+    }
+
+    .host-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px auto;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .host {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #f9f9f9;
+    }
+
+    .status {
+      font-size: 0.95em;
+      color: #b3e5fc;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #00e6e6;
+      color: #141e30;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
     }
 
     footer {
-      margin-top: 40px;
       text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: #999;
-      font-size: 0.9rem;
-      border-top: 2px solid #444;
+      margin-top: 50px;
+      padding-bottom: 30px;
+      font-size: 1.2em;
+      color: #a0f0ff;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .panel-title {
-        font-size: 1.4rem;
-      }
-
-      table, th, td {
-        font-size: 0.9rem;
-      }
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>YOUNG TEE PANEL</h1>
-    <p>⚡ Fast. Reliable. Affordable RAM Deals (1 Month Validity)</p>
-  </header>
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
 
-  <div class="container">
-    <div class="panel-title">☢ RAM LIST ☢</div>
+  <!-- HOME -->
+  <div id="home" class="section">
+    <h1>KING OF FREENET 🇫🇮 HOSTS</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Data</th>
-          <th>Price</th>
-          <th>Buy</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Example: Copy and modify for each row -->
-        <tr>
-          <td>1 GB</td>
-          <td>R20</td>
-          <td><a class="buy-button" href="https://wa.me/+27710000000?text=Hi%20Young%20Tee!%20I%20want%20to%20buy%200.1GB%20for%20R10." target="_blank">Buy Now</a></td>
-        </tr>
-        <tr>
-          <td>5 GB</td>
-          <td>R30</td>
-          <td><a class="buy-button" href="https://wa.me/+27722247464?text=Hi%20Young%20Tee!%20I%20want%20to%20buy%200.5GB%20for%20R30." target="_blank">Buy Now</a></td>
-        </tr>
-        <tr>
-          <td>10 GB</td>
-          <td>R50</td>
-          <td><a class="buy-button" href="https://wa.me/+27722247464?text=Hi%20Young%20Tee!%20I%20want%20to%20buy%201GB%20for%20R50." target="_blank">Buy Now</a></td>
-        </tr>
-        <tr>
-          <td>25 GB</td>
-          <td>R70</td>
-          <td><a class="buy-button" href="https://wa.me/+27722247464?text=Hi%20Young%20Tee!%20I%20want%20to%20buy%202.5GB%20for%20R70." target="_blank">Buy Now</a></td>
-        </tr>
-        <tr>
-          <td>UNLIMITED</td>
-          <td>R100</td>
-          <td><a class="buy-button" href="https://wa.me/+27722247464?text=Hi%20Young%20Tee!%20I%20want%20to%20buy%20UNLIMITED%20for%20R100." target="_blank">Buy Now</a></td>
-        </tr>
-        <!-- You can add more rows like above -->
-      </tbody>
-    </table>
+    <h2>MTNSA🇿🇦 WORKING HOSTS BY KOF🇫🇮</h2>
+
+    <div class="host-box">
+      <div class="host">172.66.0.156</div>
+      <div class="status">MTN UNKNOWN LIMIT</div>
+    </div>
+    <div class="host-box">
+      <div class="host">i.ayo.ba</div>
+      <div class="status">MTN UNKNOWN LIMIT</div>
+    </div>
+    <div class="host-box">
+      <div class="host">f45training.at</div>
+      <div class="status">MTN LIMITED</div>
+    </div>
+    <div class="host-box">
+      <div class="host">marvelpg777.com</div>
+      <div class="status">MTN NOT TESTED</div>
+    </div>
+    <div class="host-box">
+      <div class="host">riyadhseason.sa</div>
+      <div class="status">MTN UNKNOWN LIMIT</div>
+    </div>
+    <div class="host-box">
+      <div class="host">honeypot.solutions70.pro</div>
+      <div class="status">MTN LIMITED</div>
+    </div>
+
+    <h2>VODACOMSA🇿🇦 WORKING HOSTS</h2>
+    <div class="host-box">
+      <div class="host">connectu.vodacom.com</div>
+      <div class="status">UNLIMITED ✅</div>
+    </div>
+
+    <h2>SLOWDNS🌀</h2>
+    <div class="host-box">
+      <div class="host">196.207.45.6</div>
+      <div class="status">SlowDNS IP</div>
+    </div>
+
+    <h2>FAST DNS⚡</h2>
+    <div class="host-box">
+      <div class="host">199.34.228.73</div>
+      <div class="status">Fast DNS IP</div>
+    </div>
+
+    <footer>
+      🌬️YOUNG TEE🌬️
+    </footer>
   </div>
 
-  <footer>
-    &copy; 2025 YOUNG TEE PANEL • WhatsApp orders only 📱
-  </footer>
+  <!-- ABOUT -->
+  <div id="about" class="section hidden">
+    <h1>About</h1>
+    <p>
+      Welcome to <strong>KING OF FREENET 🇫🇮 HOSTS</strong> — your #1 source for verified and working VPN SNI & DNS hosts for MTN SA, Vodacom, and more.
+      <br><br>
+      This site is updated by <strong>YOUNG TEE</strong>, a trusted source in the Freenet community.
+    </p>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="section hidden">
+    <h1>Contact</h1>
+    <p><strong>YOUNG TEE</strong></p>
+    <p>📞 +27 72 224 7464</p>
+
+    <h2>WhatsApp Group</h2>
+    <a class="button" href="https://chat.whatsapp.com/LnsvJ0jWQfWHPIWjSpuoMq?mode=ac_t" target="_blank">Join Group</a>
+
+    <h2>WhatsApp Channel</h2>
+    <a class="button" href="https://whatsapp.com/channel/0029VbA5eXCHbFV1G3uc411a" target="_blank">Follow Channel</a>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
 
 </body>
 </html>
